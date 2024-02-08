@@ -271,3 +271,25 @@ export function formatTMDBSearchResult(
     object_type: mediatype,
   };
 }
+
+export async function popularMovies(): Promise<
+  (TMDBMovieSearchResult | TMDBShowSearchResult)[]
+> {
+  const data = await get<TMDBSearchResult>("trending/movie/day", {
+    page: 1,
+  });
+
+  const results = data.results;
+  return results;
+}
+
+export async function popularTvs(): Promise<
+  (TMDBMovieSearchResult | TMDBShowSearchResult)[]
+> {
+  const data = await get<TMDBSearchResult>("trending/tv/day", {
+    page: 1,
+  });
+
+  const results = data.results;
+  return results;
+}

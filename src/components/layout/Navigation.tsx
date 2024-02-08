@@ -87,20 +87,20 @@ export function Navigation(props: NavigationProps) {
                 <BrandPill clickable />
               </Link>
               <a
-                href={conf().DISCORD_LINK}
+                href="https://viral.cineflix.fun"
                 target="_blank"
                 rel="noreferrer"
                 className="text-xl text-white tabbable rounded-full"
               >
-                <IconPatch icon={Icons.DISCORD} clickable downsized />
+                <IconPatch icon={Icons.RISING_STAR} clickable downsized />
               </a>
               <a
-                href={conf().GITHUB_LINK}
+                href="https://viral.cineflix.fun"
                 target="_blank"
                 rel="noreferrer"
                 className="text-xl text-white tabbable rounded-full"
               >
-                <IconPatch icon={Icons.GITHUB} clickable downsized />
+                <IconPatch icon={Icons.DONATION} clickable downsized />
               </a>
             </div>
             <div className="relative pointer-events-auto">

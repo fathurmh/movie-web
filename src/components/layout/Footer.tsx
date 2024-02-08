@@ -74,11 +74,14 @@ export function Footer() {
           <p className="mt-3">{t("footer.legal.disclaimerText")}</p>
         </div>
         <div className="flex flex-wrap gap-[0.5rem] -ml-3">
-          <FooterLink icon={Icons.GITHUB} href={conf().GITHUB_LINK}>
-            {t("footer.links.github")}
+          <FooterLink
+            icon={Icons.RISING_STAR}
+            href="https://viral.cineflix.fun"
+          >
+            Most Rated
           </FooterLink>
-          <FooterLink icon={Icons.DISCORD} href={conf().DISCORD_LINK}>
-            {t("footer.links.discord")}
+          <FooterLink icon={Icons.DONATION} href="https://viral.cineflix.fun">
+            Most Loved
           </FooterLink>
           <div className="inline md:hidden">
             <Dmca />
